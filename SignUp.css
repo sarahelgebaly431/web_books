@@ -1,0 +1,121 @@
+body
+{
+    background-color: #2a4668;
+}
+
+.reg 
+{
+    position:absolute;
+    top:15%;
+    left:10%;
+    height:80%;
+    width:83%;
+    background-color:white;
+    border-radius:50px;
+}
+.reg img 
+{
+    border-radius: inherit;
+    height: 100%;
+    width: 50%;
+    box-shadow:50px 50px 50px 50px 50px;
+    float: left;
+}
+
+form
+{
+    position:relative;
+    top:10%;
+    left:8%;
+    margin-left: 400px;
+}
+h1 
+{
+    margin: -3% 22%;
+    font-family: cursive;
+    color: limegreen;
+}
+
+input 
+{
+    position:relative;
+    background-color: lightgray;
+    border:none;
+    border-radius:20px;
+    font-family: cursive;
+    height:40px;
+    width:35%;
+    font-size:x-large;
+    text-indent:10%;
+    transition: 0.2s linear;
+}
+
+label
+{
+font-family: cursive;
+font-size: large;
+}
+
+#day , #month , #year
+{
+    width:11%;
+    text-align: center;
+    text-indent: 0%;
+}
+
+input:focus , button:focus
+{
+    border:solid;
+    border-color:mediumpurple;
+    outline:none;
+}
+
+.reg button
+{
+    position:absolute;
+    right: 32%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing:border-box;
+    background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size:400%;
+    border-radius:30px;
+  border: none;
+}
+
+
+button:hover{
+    animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+    0%{
+        background-position:0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+#log , #login
+{
+    font-family: cursive;
+    font-size: large;
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s ease-in-out;
+    font:bolder;
+    right: 20%;
+
+}
+#log:hover{
+    color: #2a4668;
+}
+

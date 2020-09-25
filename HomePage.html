@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Store</title>
+        <link rel="stylesheet" href="HomePage.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+
+    </head>
+    <body>
+
+        <!--Title Bar-->
+        <header>
+            <div class="title-bar">
+                <a href="HomePage.html">IQRAA</a>
+                <p class="title-txt">whatever you want</p>
+                <p class="par-txt">The easiest way to get a book</p>
+                <p id="welcome"></p>
+            </div>
+        </header>
+
+        <!--Menu Bar-->
+        <div class="menu-bar" >
+            <div class="menu-tabs">
+                <ul>
+                    <li class="active"><a href="HomePage.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li class="books"><a><i class="fa fa-book"></i>Books</a>
+                        <div class="books-type">
+                            <ul>
+                                <li><a href="Books.html"><i class="fas fa-book-reader"></i>Read</a></li>
+                                <li><a href="Buying.html"><i class="fa fa-usd"></i>Buy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="Admin.html"><i class="fa fa-user-cog"></i>Admin</a></li>
+                    <li class="signout"><a href="Login.html"><i class="fa fa-sign-out-alt"></i>Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Content-->
+        <div class="content">
+
+            <!--Slider-->
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+            
+                    <div class="slide first">
+                        <img src="slider1.PNG">
+                    </div>
+            
+                    <div class="slide">
+                        <img src="slider2.PNG">
+                    </div>
+            
+                    <div class="slide">
+                        <img src="slider3.PNG">
+                    </div>
+            
+                    <div class="slide">
+                        <img src="slider4.PNG">
+                    </div>
+            
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        </div>
+                </div>
+            </div>
+           
+            <!--Page Paragraphs-->
+            <div class="paragraghs">
+                   <P class="first-par">Get your book</P>
+                   <p class="second-par">Choose between many different types of books that are<br> useful and interesting for all ages.</p>
+            </div><hr>
+
+            <div class="paragraghs">
+                <P class="first-par">Download or Buy</P>
+                <p class="second-par">You can easily free download variety of books and<br> Get some exclusive books with good prices.</p>
+            </div><hr>
+
+            <div class="paragraghs">
+                <P class="first-par">Enjoy your reading</P>
+                <p class="second-par">Have a nice time with our site and don't forget to invite your friends.</p>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+
+            <!--Success Message-->
+            <div class="alert hide">
+                <span class="fa fa-check-circle"></span>
+                <span class="msg">Your message has been sent successfuly</span>
+                <span class="close-btn">
+                    <span class="fas fa-times"></span>
+                </span>
+            </div>
+
+            <div class="main-content">
+
+                <!--Left Box-->
+                <div class="left box">
+                    <h2><span class="fa fa-user"></span> About Us</h2>
+                    <div class="content">
+                        <p>We are students from Faculty of Computer and Information Science Ain Shams University 
+                        and this is our Team Web Project For the Summer Course Training. 
+                        We hope you enjoy it.</p>
+                        <div class="social">
+                            <a href=""><span class="fab fa-facebook-f"></span></a>
+                            <a href=""><span class="fab fa-twitter"></span></a>
+                            <a href=""><span class="fab fa-instagram"></span></a>
+                            <a href=""><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-line"></div>
+
+                <!--Center Box-->
+                <div class="center box">
+                    <h2> <span class="fas fa-map-marker-alt"></span>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="text">Cairo, Egypt</span><br><br>
+                            <img src="location.PNG">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-line"></div>
+
+                <!--Right Box-->
+                <div class="right box">
+                    <h2><span class="fas fa-envelope"></span>Contact Us</h2>
+                    <div class="content">
+                        <form action="#">
+                            <div class="email">
+                                <div class="text">Email:</div>
+                                <input type="email" required>
+                            </div><br>
+                            <div class="msg">
+                                <div class="text">Message:</div>
+                                <textarea rows="2" cols="22" required></textarea>
+                            </div>
+                            <div class="btn">
+                               <button type="submit" class="submit-btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script type="text/javascript">
+        
+        /*Slider*/
+        var counter = 1;
+        setInterval(function()
+        {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4) 
+        {
+            counter = 1;
+        }
+        },4000); 
+       
+        /*Seccess Message*/
+        $('.submit-btn').click(function(){
+            $('.alert').removeClass("hide");
+            $('.alert').addClass("show");
+            $('.alert').addClass("showAlert");
+            setTimeout(function(){
+                $('.alert').addClass("hide");
+                $('.alert').removeClass("show");
+            },4000);
+        });
+        $('.close-btn').click(function(){
+            $('.alert').addClass("hide");
+            $('.alert').removeClass("show");
+        });
+
+        /*User Name*/
+        var name;
+        window.addEventListener('load',() =>{
+            const p=(new URL(document.location)).searchParams;
+            name=p.get('name');
+            document.getElementById("welcome").innerHTML="Welcome, "+name;
+
+        })
+        var x="welcome, "+name;
+        document.getElementById("welcome").innerHTML=x;
+       
+    </script>
+    
+    </body>
+</html>
+

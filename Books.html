@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang ="eng">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="Books.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="Books.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="title-bar">
+        <a href="HomePage.html">IQRAA</a>
+        <p class="title-txt">whatever you want</p>
+        <p class="par-txt">The easiest way to get a book</p>
+        <p id="welcome"></p>
+      </div>
+  </header>
+
+    <div class="menu-bar" >
+      <div class="menu-tabs">
+        <ul>
+          <li><a href="HomePage.html"><i class="fa fa-home"></i>Home</a></li>
+          <li class="active"><a><i class="fa fa-book"></i>Books</a>
+            <div class="books-type">
+              <ul>
+                <li><a href="Books.html"><i class="fas fa-book-reader"></i>Read</a></li>
+                <li><a href="Buying.html"><i class="fa fa-usd"></i>Buy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="Admin.html"><i class="fa fa-user-cog"></i>Admin</a></li>
+          <li class="signout"><a href="Login.html"><i class="fa fa-sign-out-alt"></i>Sign Out</a></li>
+
+        </ul>
+      </div>
+
+      <div class="search-box">
+        <input class="search-txt" type="text" id="myInput" onkeyup="myFunction()" placeholder="Type to search.." >
+        <a class="search-btn">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="empty"></div>
+
+    <ul id="myUL">
+      <li>
+        <div class="books" >
+            <img src="shefa.jpeg" alt= sheva>
+            <p class="small">Author: Abd ELRazee</p>
+            <p class="arabic">رواية شيفا</p>
+            <button onclick="location.href='https://bookdownload.club/wp-content/uploads/2020/07/%D8%B4%D9%8A%D9%81%D8%A7-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82-%D8%B7%D9%88%D8%A7%D9%87%D8%B1%D9%8A%D8%A9.pdf';">Open</button>
+        </div>
+      </li>
+  
+      <li>
+        <div class="books" >
+          <img src="torab el maas.jpeg" alt= sheva>
+          <p class="small">Author: Ahmed Morad</p>   
+          <p class="arabic">تراب الماس</p>
+          <button onclick="location.href='https://bookdownload.club/wp-content/uploads/2020/07/%D8%B4%D9%8A%D9%81%D8%A7-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82-%D8%B7%D9%88%D8%A7%D9%87%D8%B1%D9%8A%D8%A9.pdf';">Open</button>
+        </div>
+      </li>
+  
+      <li>
+        <div class="books">
+          <img src="youtubya.jpeg" alt= sheva>
+          <p class="small">Author: Ahmed khaled tawfik</p>
+          <p class="arabic">يوتوبيا</p>
+          <button onclick="location.href='https://bookdownload.club/wp-content/uploads/2020/07/%D8%B4%D9%8A%D9%81%D8%A7-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82-%D8%B7%D9%88%D8%A7%D9%87%D8%B1%D9%8A%D8%A9.pdf';">Open</button>
+        </div>
+      </li>
+  
+      <li>
+        <div class="books">
+          <img src="elghzlan.jpeg" alt= sheva>
+          <p class="small">Author: Ahmed Morad</p>
+          <p class="arabic">موسم صيد الغزلان</p>
+          <button onclick="location.href='https://bookdownload.club/wp-content/uploads/2020/07/%D8%B4%D9%8A%D9%81%D8%A7-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82-%D8%B7%D9%88%D8%A7%D9%87%D8%B1%D9%8A%D8%A9.pdf';">Open</button>
+        </div>
+      </li>
+  
+      <li> 
+        <div class="books" >
+          <img src="last wahdk.jpeg" alt= sheva>
+          <p class="small">Author: Ahmed khaled tawfik</p>
+          <p class="arabic">لست وحدك</p>
+          <button onclick="location.href='https://bookdownload.club/wp-content/uploads/2020/07/%D8%B4%D9%8A%D9%81%D8%A7-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82-%D8%B7%D9%88%D8%A7%D9%87%D8%B1%D9%8A%D8%A9.pdf';">Open</button>
+        </div>
+      </li>
+  
+      <li>    
+        <div class="books">
+          <img src="el amwat.jpeg" alt= sheva>
+          <p class="small">Author: Fyodor Dostoyevsky</p>
+          <p class="arabic">منزل الأموات</p>
+          <button onclick="location.href='https://bookdownload.club/wp-content/uploads/2020/07/%D8%B4%D9%8A%D9%81%D8%A7-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82-%D8%B7%D9%88%D8%A7%D9%87%D8%B1%D9%8A%D8%A9.pdf';">Open</button>
+        </div>
+      </li>
+  
+      <li>   
+        <div class="books">
+          <img src="zekola.jpeg" alt= sheva>
+          <p class="small">Author: Amr Abd-ElHamed</p>
+          <p class="arabic">أرض زيكولا (1)</p>
+          <button onclick="location.href='https://bookdownload.club/wp-content/uploads/2020/07/%D8%B4%D9%8A%D9%81%D8%A7-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82-%D8%B7%D9%88%D8%A7%D9%87%D8%B1%D9%8A%D8%A9.pdf';">Open</button>
+        </div>
+      </li>
+  
+      <li>
+        <div class="books">
+          <img src="afaal bashrya.jpeg" alt= photo>
+          <p class="small">Author: Han Kang</p>
+          <p class="arabic">رواية أفعال بشرية</p>
+          <button onclick="location.href='https://www.bookleaks.com/files/fhrst7/546.pdf' ; " >Open</button>
+        </div>
+      </li>
+  
+      <li>
+        <div class="books">
+          <img src="amareta.jpeg" alt= sheva>
+          <p class="small">Author: Amr Abd-ElHamed</p>
+          <p class="arabic">أرض زيكولا: رواية أماريتا</p>
+          <button onclick="location.href='https://www.bookleaks.com/files/new/4.pdf' ; ">Open</button>
+        </div>
+      </li>
+  
+      <li>
+        <div class="books">
+          <img src="extacy.jpeg" alt= sheva>
+          <p class="small">Author: Abd-Elhady Elashman</p>
+          <p class="arabic">اكستاسي</p>
+          <button class="edited-btn" onclick="location.href='https://www.bookleaks.com/files/fhrst6/423.pdf' ; ">Open</button>
+        </div>
+      </li>
+  
+      <li>
+        <div class="books">
+          <img src="hebta.jpeg" alt= photo>
+          <p class="small">Author: Mohammed Sadek</p>
+          <p class="arabic">رواية هيبتا</p>
+          <button onclick="location.href='https://www.bookleaks.com/files/fhrst2/0878.pdf' ; ">Open</button>
+        </div>   
+      </li>
+  
+      <li>
+        <div class="books">
+          <img src="el mokawma.jpeg" alt= photo>
+          <p class="small">Author: László Krasznahorkai</p>
+          <p class="arabic">رواية كآبة المقاومة</p>
+          <button class="edited-btn" onclick="location.href='https://www.bookleaks.com/files/fhrst7/546.pdf' ; ">Open</button>
+        </div>
+      </li>
+    </ul>
+    
+    <div class="emptyy"></div>
+
+    <footer>
+      <!--Alert-->
+      <div class="alert hide">
+        <span class="fa fa-check-circle"></span>
+        <span class="msg">Your message has been sent successfuly</span>
+        <span class="close-btn">
+            <span class="fas fa-times"></span>
+        </span>
+      </div>
+
+      <div class="main-content">
+
+        <!--Left Box-->
+        <div class="left box">
+          <h2><span class="fa fa-user"></span> About Us</h2>
+          <div class="content">
+            <p>We are students from Faculty of Computer and Information Science Ain Shams University and this is our Team Web Project For the Summer Course Training. We hope you enjoy it.</p>
+            <div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-line"></div>
+
+        <!--Center Box-->
+        <div class="center box">
+          <h2> <span class="fas fa-map-marker-alt"></span>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="text">Cairo, Egypt</span><br><br>
+              <img src="location.PNG">
+            </div>
+          </div>
+        </div>
+        
+        <div class="right-line"></div>
+
+        <!--Right Box-->
+        <div class="right box">
+          <h2><span class="fas fa-envelope"></span>Contact Us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email:</div>
+                <input type="email" required>
+              </div><br>
+              <div class="msg">
+                <div class="text">Message:</div>
+                <textarea rows="2" cols="22" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit" class="submit-btn">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+
+      $('.submit-btn').click(function(){
+        $('.alert').removeClass("hide");
+        $('.alert').addClass("show");
+        $('.alert').addClass("showAlert");
+        setTimeout(function(){
+          $('.alert').addClass("hide");
+          $('.alert').removeClass("show");
+        },3000);
+      });
+      $('.close-btn').click(function(){
+        $('.alert').addClass("hide");
+        $('.alert').removeClass("show");
+      });
+    </script>
+  </body>
+</html>

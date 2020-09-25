@@ -1,0 +1,80 @@
+.text 
+{
+    height: 20px;
+}
+.text h1{
+    margin: 20px 50px;
+color: #fff;
+font-size: 30px;
+font-family: cursive;
+}
+.text h2{
+    margin: 100px 50px;
+    color: #fff;
+    font-size: 30px;
+    font-family: cursive;
+}
+.text h3{
+    margin: 113px 30px;
+    color: #fff;
+    font-size: 30px;
+    font-family: cursive;
+}
+.box1 
+{
+position: absolute;
+top: 155px;
+left: 380px;
+padding: 5px;
+background: #f1f1f1;
+}
+.box1 a,.box2 a, .box3 a
+{
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-indent: -9999px;
+    margin: 5px;
+    cursor: pointer;
+}
+.box2 
+{
+position: absolute;
+top: 300px;
+left: 380px;
+padding: 5px;
+background: #f1f1f1;
+}
+.box3
+{
+ position: absolute;
+top: 445px;
+left: 380px;
+padding: 5px;
+background: #f1f1f1;
+}
+#red{
+    background:#e74c3c;
+}
+
+#pink{
+    background:#FFC0CB;
+}
+#blue{
+    background:#0000FF;
+}
+#lavender{
+    background: #E6E6FA;
+}
+#green{
+    background:#008000;
+}
+#yellow{
+    background:#FFFF00;
+}
+#gold{
+    background: #FFD700;
+}
+#orange{
+    background:#FFA500;
+}

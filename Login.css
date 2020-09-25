@@ -1,0 +1,148 @@
+body {
+    background-color: #151c20;
+    font-family:Junegull;
+}
+
+h1 {
+    margin: 3% 29%;
+    font-family: 'Soft Marshmallow Turbo';
+}
+#remember {
+    position: fixed;
+    left: 61.5%;
+    top: 61%;
+    font-size: xx-large;
+    transition: color 0.3s ease-in-out;
+}
+#remember:hover {
+    color: #2a4668;
+}
+
+#forgot {
+    position:fixed;
+    right: 28%;
+    bottom:16%;
+    color: gray;
+    text-decoration: none;
+    font-family: Junegull;
+    transition:color 0.3s ease-in-out;
+}
+#forgot:hover {
+    color: #2a4668;
+}
+
+#total {
+    position:fixed;
+    top:15%;
+    left:10%;
+    height:80%;
+    width:80%;
+    background-color:white;
+    border-radius:50px;
+}
+form{
+    position:relative;
+    top:15%;
+    left:10%;
+}
+img {
+    border-radius: inherit;
+    height: 100%;
+    width: 50%;
+    box-shadow:50px 50px 50px 50px 50px;
+}
+
+input {
+    position: relative;
+    background-color: lightgray;
+    border: none;
+    border-radius: 20px;
+    font-family: Arial;
+    height: 40px;
+    width: 35%;
+    font-size: x-large;
+    text-indent: 15%;
+    outline: none;
+    border: solid 0px #2a4668;
+    transition: border-width 0.2s linear;
+}
+
+input:focus {
+    border-width: 3px;
+}
+
+#check{
+    position:absolute;
+    left:22%;
+    top: 97%;
+    width:3%;
+}
+i{
+    position:relative;
+    right:35%;
+}
+#icon1{
+    bottom:65%;
+}
+#icon{
+    right:34.5%;
+    bottom:37%;
+}
+#icon2{
+    right:6%;
+}
+select{
+    height:35px;
+    width:15%;
+    font-family:Junegull;
+    font-size:x-large;
+}
+#signup{
+    position:fixed;
+    bottom:12%;
+    right:27%;
+    color:gray;
+    text-decoration:none;  
+    font-family:Junegull;
+    transition:color 0.3s ease-in-out;
+}
+    #signup:hover {
+        color: #2a4668;
+    }
+#looog {
+    position: fixed;
+    bottom: 18%;
+    right: 13%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: linear-gradient(90deg,#2a4668,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    outline: none;
+    font-family: Junegull;
+    border: none;
+}
+
+#looog:hover{
+    animation: animate 8s linear infinite;
+}
+#looog:focus {
+    border: solid;
+    border-color: #2a4668;
+}
+@keyframes animate{
+    0%{
+        background-position:0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}

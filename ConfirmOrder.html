@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="ConfirmOrder.css">
+      <link rel="stylesheet" href="HomePage.css">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+  <body >
+
+    <!-- <header>
+      <div class="title-bar">
+          <a href="HomePage.html">IQRAA</a>
+          <p class="title-txt">whatever you want</p>
+          <p class="par-txt">The easiest way to get a book</p>
+      </div>
+    </header>
+    <div class="menu-bar" >
+      <div class="menu-tabs">
+        <ul>
+            <li class="active"><a href="HomePage.html"><i class="fa fa-home"></i>Home</a></li>
+            <li class="books"><a><i class="fa fa-book"></i>Books</a>
+              <div class="books-type">
+                <ul>
+                  <li><a href="Books.html"><i class="fas fa-book-reader"></i>Read</a></li>
+                  <li><a href="Buying.html"><i class="fa fa-usd"></i>Buy</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="Admin.html"><i class="fa fa-user-cog"></i>Admin</a></li>
+            <li class="signout"><a href="Login.html"><i class="fa fa-sign-out-alt"></i>Sign Out</a></li>
+          </ul>
+      </div>
+    </div> -->
+
+
+    <h1>Please fill out the form to confirm the order</h1>
+    <div class="container">
+      <form action="Buying.html">
+        <ul>
+          <li>Name</li>
+          <input type="text" name="name"  placeholder="Your name.." required>
+
+          <li>Phone</li>
+          <input type="tel"  placeholder="01-XXXXXXXXX" minlength="11" maxlength="11" required>
+
+          <li>Country</li>
+          <select>
+            <option>Cario</option>
+            <option>Asuit</option>
+            <option>Alex</option>
+            <option>Luxor</option>
+            <option>Aswan</option>
+            <option>Giza</option>
+            <option>Sohag</option>
+          </select>
+
+          <li>Address</li> 
+          <input type="text" placeholder="Enter your address" required>
+
+          <li>Amount</li>
+          <input type="number" required>  
+
+          <h2>Note:</h2>
+          <p>Order will come within 4 days</p>
+          <input type="submit" value="Confirm The Order">
+          
+        </ul>  
+      </form>
+    </div>
+  </body>
+</html>     

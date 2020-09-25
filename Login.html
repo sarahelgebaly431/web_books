@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="Login.css" />
+        <link rel="stylesheet" type="text/css" href="HomePage.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <title>
+            Log In
+        </title>
+        <script>
+            function validation()
+            {
+                if(document.getElementById("name").value=="")
+                {
+                    return false;
+                }
+                else if(document.getElementById("Pass").value=="")
+                {
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <div class="title-bar">
+                <a href="#">IQRAA</a>
+                <p class="title-txt">whatever you want</p>
+                <p class="par-txt">The easiest way to get a book</p>
+            </div>
+        </header>
+
+        <div id="total">
+            <img src="books.jpg" style="float:left" /><br />
+
+            <form style="margin-left:400px" action="HomePage.html">
+                <h1 style="color: limegreen">Welcome</h1>
+
+                <input type="text" name="name" placeholder="Username" id="name" required />
+                <i class="fa fa-user-circle" id="icon1"> </i><br /><br />
+
+                <input type="password" id="Pass" placeholder="Password" required minlength="8">
+                <i class="fa fa-lock icon" id="icon"></i>
+                <br /><br />
+
+                <div>
+                    <label for="check" id="remember">remember me</label>
+                    <input type="checkbox" name="Remember" id="check" />
+                </div>
+
+                <a href="#" id="forgot" class="color" >Fogot Password?</a>
+                <a href="SignUp.html" id="signup" class="color">Create a new account</a>
+
+                <button type="submit" id="looog" style="font-family:Junegull;outline:none" onclick="validation()">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

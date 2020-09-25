@@ -1,0 +1,123 @@
+.empty
+{
+    height: 50px;
+}
+.emptyy
+{
+    clear:both;
+}
+
+.search-box{
+    position:absolute;
+    top: 50%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    background: #2a3849;
+    padding: 10px;
+    height: 27px;
+    border-radius: 40px;
+}
+.search-btn{
+    width: 35px;
+    height: 35px;
+    margin-top:0px;
+    margin-right:-8px;
+    float: right;
+    border-radius: 40px;
+    background-color: #2a3849;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 27px;
+    width: 0px;
+    font-weight: bold;
+}
+.search-btn > i {
+    font-size: 25px;
+}
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0px 6px;
+}
+
+/*Books*/
+#myUL{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.buying , .books
+{
+    border: 4px solid black;
+    width: 233px;
+    height: 390px;
+    float: left;
+    margin: 0px 80px 70px 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -12px 12px 15px #2a4668;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.books:hover{
+    transform: scale(1.05);
+}
+.buying:hover
+{
+    transform: scale(1.05);
+}
+
+.buying p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.small{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.books button, .buying button
+{
+    margin-bottom:30px ;
+    margin-left: 55px;
+    width: 120px;
+    height: 30px;
+    background: #2a4668;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.arabic{
+    font-size: 20px;
+    font-weight:900 ;
+    margin-top: 13px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
